@@ -14,8 +14,17 @@ The Contacts Management System is a CRM (Customer Relationship Management) featu
 * Error Handling: Robust error handling for both client-side (frontend validations) and server-side (API error responses).
 * Database: MongoDB is used for its scalability, flexibility, and seamless integration with Node.js for handling large amounts of data.
 
-**Setup Instructions**
+## Setup Instructions
 
 **Prerequisites**
+* Node.js
+* MongoDB
+
+**Installation**
+* Clone the Repository:
+     ```bash
+     git clone https://github.com/your-username/contacts-management-system.git
+     cd contacts-management-system
+     ```
 
 
