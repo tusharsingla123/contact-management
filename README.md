@@ -23,8 +23,34 @@ The Contacts Management System is a CRM (Customer Relationship Management) featu
 **Installation**
 * Clone the Repository:
      ```bash
-     git clone https://github.com/your-username/contacts-management-system.git
+     git clone https://github.com/tusharsingla123/contacts-management.git
      cd contacts-management-system
      ```
+* Install Server Dependencies: Navigate to the backend folder and install dependencies
+  ```bash
+  cd backend
+  npm install
+  ```
+* Install Client Dependencies: Open a new terminal window, navigate to the frontend folder, and install dependencies
+  ```bash
+  cd frontend
+  npm install
+  ```
+* Configure Environment Variables: Create a .env file in the backend directory and specify the following environment variables
+  ```bash
+  PORT=8000
+  MONGODB_URI=mongodb://localhost:27017/contactsDB
+  ```
+* Database Setup: Ensure MongoDB is running locally or modify the MONGODB_URI in the .env file to match your database setup.
+* Run the Backend Server: Start the backend server in the backend folder
+  ```bash
+  npm start
+  ```
+ The server will start at http://localhost:8000.
+* Run the Frontend Server: Start the React frontend in the frontend folder.
+  ```bash
+  npm start
+  ```
+  The frontend will be accessible at http://localhost:3000.
 
 
