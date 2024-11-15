@@ -46,11 +46,11 @@ The Contacts Management System is a CRM (Customer Relationship Management) featu
   ```bash
   npm start
   ```
- The server will start at http://localhost:8000.
+   The server will start at http://localhost:8000.
 * Run the Frontend Server: Start the React frontend in the frontend folder.
   ```bash
   npm start
   ```
-  The frontend will be accessible at http://localhost:3000.
+   The frontend will be accessible at http://localhost:3000.
 
 
