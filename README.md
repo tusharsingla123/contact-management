@@ -55,7 +55,7 @@ The Contacts Management System is a CRM (Customer Relationship Management) featu
 
 ## ScreenShot
 
-![Uploading Screenshot 2024-11-15 at 2.39.19 PM.png…]()
+<img width="1440" alt="Screenshot 2024-11-15 at 2 39 19 PM" src="https://github.com/user-attachments/assets/a5173866-554f-42b8-8ffd-3ac473b775c2">
 
 ## Database Schema
 
