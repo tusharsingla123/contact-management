@@ -53,4 +53,49 @@ The Contacts Management System is a CRM (Customer Relationship Management) featu
   ```
    The frontend will be accessible at http://localhost:3000.
 
+## ScreenShot
+
+## Database Schema
+
+``` bash
+const mongoose = require("mongoose");
+const contactSchema = new mongoose.Schema({
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
+  phoneNumber: { type: String, required: true },
+  company: { type: String },
+  jobTitle: { type: String },
+});
+module.exports = mongoose.model("Contact", contactSchema);
+```
+
+  This schema is used to store contact information in MongoDB. Ensure you have created the database and added this schema to your backend.
+
+
+## Project Structure
+
+**Backend**
+* Routes: Defined in Express for CRUD operations at endpoints like /contacts.
+* Controllers: Handle business logic for each operation (e.g., adding, updating contacts).
+* Database: MongoDB stores contact data, with Mongoose for schema modeling.
+* Validation & Error Handling: Includes checks for required fields, email formats, and unique constraints.
+
+**Frontend**
+* Components:
+    * ContactsTable: Displays contacts in a paginated, sortable table.
+    * Form: Manages adding and editing contact information with validation.
+    * Pagination & Sorting: Managed by MUI components (TablePagination and TableSortLabel).
+* State Management: Managed with useState hooks and props passed between components.
+* Navigation: React Router handles navigation between pages (e.g., editing contact details).
+
+## Running Tests
+To test API endpoints or other functionality, use tools like Postman or ThunderClient
+
+## Future Improvements
+* Add user authentication and authorization for secure data access.
+* Implement additional filters and advanced search functionality.
+* Consider Dockerization for consistent environment setups.
+
+
 
